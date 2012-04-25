@@ -1,0 +1,3 @@
+Alg: Custom color: #00FF00
+Colors to ignore: Pure greys
+Drop Shadow: no

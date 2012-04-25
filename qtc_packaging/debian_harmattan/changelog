@@ -1,0 +1,10 @@
+toggleavailability (1.0.0) unstable; urgency=low
+  * First proper version
+
+ -- Arto Jalkanen <ajalkane@gmail.com>  Thu, 26 Apr 2012 01:58:22 +0300
+
+toggleavailability (0.0.1) unstable; urgency=low
+
+  * Initial pre-release.
+
+ -- Arto Jalkanen <ajalkane@gmail.com>  Tue, 24 Apr 2012 22:45:14 +0300
