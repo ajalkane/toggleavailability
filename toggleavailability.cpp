@@ -56,15 +56,18 @@ ToggleAvailability::activate() {
                 continue;
             }
 
-            Tp::Presence presence = tpAccount->requestedPresence();
+            Tp::Presence presence = tpAccount->requestedPresence();            
             qDebug() << "ToggleAvailability::toggle current requestedPresence status " << presence.status();
 
-            if (presence.status() == Tp::Presence::offline().status()) {
+            if (presence.type() == Tp::ConnectionPresenceTypeOffline) {
                 qDebug() << "ToggleAvailability::toggle setting presence available for " << uid;
                 presence = Tp::Presence::available();
+                tpAccount->setConnectsAutomatically(true);
+                tpAccount->setAutomaticPresence(presence);
             } else {
                 qDebug() << "ToggleAvailability::toggle setting presence offline for " << uid;
                 presence = Tp::Presence::offline();
+                tpAccount->setConnectsAutomatically(false);
             }
 
             tpAccount->setRequestedPresence(presence);

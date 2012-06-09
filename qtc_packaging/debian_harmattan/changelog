@@ -1,3 +1,8 @@
+toggleavailability (1.0.1) unstable; urgency=low
+  * Auto-connection fix
+
+ -- Arto Jalkanen <ajalkane@gmail.com>  Sat, 9 Jun 2012 22:10:00 +0300
+
 toggleavailability (1.0.0) unstable; urgency=low
   * First proper version
 
